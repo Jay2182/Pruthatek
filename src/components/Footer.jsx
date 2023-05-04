@@ -50,14 +50,14 @@ const Footer = () => {
 						</span>
 					</div>
 					{/* seperator line */}
-					<div className="w-full h-[1px] bg-gradient-to-r from-white to-[#fff0]"></div>
+					<div className="w-full h-[1px] bg-gradient-to-r dark:from-white dark:to-[#fff0]"></div>
 					<div className="p-2">
 						<ul className="list-disc list-inside flex flex-col gap-4">
 							{servicesData.map((p, index) => {
 								return (
 									<li
 										key={index}
-										className="text-xs font-medium"
+										className="text-xs font-medium hover:opacity-70 duration-300"
 									>
 										{p.title}
 									</li>
@@ -79,7 +79,10 @@ const Footer = () => {
 						<ul className="list-disc list-inside flex flex-col gap-4">
 							{expertisData.map((p, index) => {
 								return (
-									<li key={index} className="text-xs">
+									<li
+										key={index}
+										className="text-xs font-medium hover:opacity-70 duration-300"
+									>
 										{p.title}
 									</li>
 								);
@@ -100,7 +103,10 @@ const Footer = () => {
 						<ul className="list-disc list-inside flex flex-col gap-4">
 							{aboutUsData.map((p, index) => {
 								return (
-									<li key={index} className="text-xs">
+									<li
+										key={index}
+										className="text-xs font-medium hover:opacity-70 duration-300"
+									>
 										<a href={p.link}>{p.title}</a>
 									</li>
 								);
@@ -128,11 +134,11 @@ const Footer = () => {
 						</div>
 					</div>
 					{/* row 2 input */}
-					<div className="bg-gradient-to-r from-[#505050CC] to-[#B3B3B300] p-[1px] rounded-lg">
+					<div className="bg-gradient-to-r from-[#505050CC] to-[#B3B3B300] p-[1px] rounded-lg w-[80%] hover:w-[100%] hover:from-[#F05225] hover:to-[#eea92000] duration-300">
 						<div className="w-full bg-black rounded-lg">
 							<div className="flex items-center justify-between rounded-lg bg-gradient-to-r from-[#D9D9D91A] to-[#D9D9D900]">
 								<input
-									className="bg-transparent w-full p-3 pr-10 outline-none"
+									className="bg-transparent w-full p-3 pr-10 outline-none cursor-pointer"
 									type="text"
 									placeholder="Type Your Email here....!"
 								/>
@@ -154,22 +160,22 @@ const Footer = () => {
 					</div>
 					{/* row 2 */}
 					<div className="flex items-center justify-center gap-9">
-						<div>
+						<div className="hover:rotate-180 duration-300">
 							<a href="/">
 								<img src={facebook} alt="Facebook" />
 							</a>
 						</div>
-						<div>
+						<div className="hover:rotate-180 duration-300">
 							<a href="/">
 								<img src={insta} alt="Instagram" />
 							</a>
 						</div>
-						<div>
+						<div className="hover:rotate-180 duration-300">
 							<a href="/">
 								<img src={linkedin} alt="Linkedin" />
 							</a>
 						</div>
-						<div>
+						<div className="hover:rotate-180 duration-300">
 							<a href="/">
 								<img src={twitter} alt="Twitter" />
 							</a>
