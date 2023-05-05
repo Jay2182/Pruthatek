@@ -117,6 +117,7 @@ const Footer = () => {
 			</div>
 			{/* CONNECT */}
 			<div className="flex flex-col items-center justify-center gap-10">
+				{/* container 1 heading*/}
 				<div className="flex flex-col gap-8">
 					{/* row 1 heading*/}
 					<div className="flex items-center gap-1">
